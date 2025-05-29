@@ -1,0 +1,1 @@
+For the plugin corresponding to PCRec-simple, replace train.py in the path of generative-recommenders-main/generative_recommenders/trainer with train.py in the main folder.
