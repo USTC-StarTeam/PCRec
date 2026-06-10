@@ -109,5 +109,5 @@ If you find this repository useful, please cite:
 
 ## 13. Contact
 
-- First author: Wenjia Xie.
+- First author: Wenjia Xie (no verified public email found from accessible paper sources).
 - Repository questions: please open a GitHub issue in this repository.
