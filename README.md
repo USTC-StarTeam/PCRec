@@ -73,9 +73,18 @@ The paper's reproduced setting depends on the host generative-recommenders confi
 
 ## 10. Experimental Highlights
 
-- PCRec targets the inference-time cost of user-specific optimization.
-- The method is designed for sequential recommendation scenarios where personalization must happen quickly.
-- The implementation separates model code from the trainer plugin so it can be integrated into existing generative recommendation pipelines.
+PCRec targets the inference-time cost of user-specific optimization. The method is designed for sequential recommendation scenarios where personalization must happen quickly.
+
+| Reproducible setting in this repository | Evidence exposed by the release |
+| --- | --- |
+| Logged ranking metrics | The trainer reports `NDCG@10`, `HR@10`, `HR@50`, and `MRR` during evaluation. |
+| Full evaluation output | The evaluation code can log `NDCG@1/10/50/100/200`, `HR@1/10/50/100/200/500/1000`, and `MRR`. |
+| Integration boundary | PCRec separates model code from the trainer plugin, making it easier to integrate with existing generative-recommendation pipelines. |
+| Practical target | The repository focuses on reducing personalization overhead at inference time rather than changing dataset preprocessing. |
+
+The ACM-hosted KDD paper tables are not mirrored in this repository and the publisher PDF was not directly accessible during this pass, so exact benchmark scores are intentionally not restated here. Add the numeric table once an accessible official source or released result artifact is available.
+
+**Conclusion:** the current README can document the evaluation surface and personalization objective reliably, while avoiding unsupported numeric claims.
 
 ## 11. Notes For Maintainers
 
